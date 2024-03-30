@@ -1,0 +1,536 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   font-family: sans-serif;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+p {
+   font-size: 1rem;
+   line-height: 1.9rem;
+}
+
+#Home {
+   width: 100%;
+   height: 80px;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 100px;
+
+}
+
+
+
+.logo {
+   font-size: 28px;
+   font-weight: bold;
+   color: yellow;
+}
+
+.hamburger {
+   display: none;
+}
+
+.nav-bar ul {
+   display: flex;
+   padding: 10px 0;
+}
+
+.nav-bar ul li a {
+   display: block;
+   color: yellow;
+   font-size: 20px;
+   padding: 10px 25px;
+   border-radius: 50px;
+   transition: 0.2s;
+   margin: 0 5px;
+}
+
+@media only screen and (max-width: 1320px) {
+   #Home {
+       padding: 0 50px;
+   }
+}
+
+@media only screen and (max-width: 1100px) {
+   #Home {
+       padding: 0 30px;
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   .hamburger {
+       display: block;
+       cursor: pointer;
+   }
+
+   .hamburger .line {
+       width: 30px;
+       height: 3px;
+       background-color: yellow;
+       margin: 6px 0;
+   }
+
+   .nav-bar {
+       height: 0;
+       position: absolute;
+       top: 80px;
+       left: 0;
+       right: 0;
+       width: 100vw;
+       background: yellow;
+       transition: 0.5s;
+       overflow: hidden;
+   }
+
+   .nav-bar.active {
+       height: 100%;
+   }
+
+   .nav-bar ul {
+       display: block;
+       width: fit-content;
+       margin: 80px auto 0 auto;
+       text-align: center;
+       transition: 0.5s;
+       opacity: 0;
+       padding: 10px 0;
+   }
+
+   .nav-bar.active ul {
+       opacity: 1;
+   }
+
+   .nav-bar ul li a {
+       margin-bottom: 12px;
+       color: black;
+       font-weight: bold;
+   }
+}
+
+#title {
+   background: black;
+   height: 100%;
+   padding: 0 10px;
+}
+
+.welcome {
+   background-color: black;
+   width: 100%;
+   padding-top: 320px;
+   padding-bottom: 350px;
+   color: yellow;
+   font-size: 30px;
+   font-weight: bold;
+   padding-left: 160px;
+}
+
+@media only screen and (max-width: 1100px) {
+   .welcome {
+       padding-left: 75px;
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   .welcome {
+       padding-left: 20px;
+   }
+}
+
+@media only screen and (max-width: 300px) {
+   .welcome {
+       padding-left: 5px;
+       padding-right: 5px;
+   }
+}
+
+/* hero */
+#hero {
+   height: auto; /* Mengubah height dari 1200px menjadi auto */
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   width: 100%;
+   margin: 0 auto;
+   background: #cea5ad;
+}
+
+.hero-name {
+   font-size: 3rem;
+   font-family: 700;
+   margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+   color: yellow;
+}
+
+.hero-right img {
+    width: 100%; /* Mengubah width dari 75% menjadi 100% */
+    height: auto; /* Mengubah height dari 75% menjadi auto */
+    margin-top: -5px;
+}
+
+.hero-right {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 100px;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 3rem;
+}
+
+.hero-left {
+   margin-top: 500px;
+   margin-left: 160px;
+}
+
+.pre-title {
+   text-transform: uppercase;
+   letter-spacing: 0.5rem;
+   color: white;
+   position: relative;
+   padding-left: 40px;
+   width: fit-content;
+   font-weight: 400;
+   font-size: 0.9rem;
+   grid-column: 1 / -1; /* Mengubah grid-column dari auto menjadi 1 / -1 */
+}
+
+.pre-title::before {
+   content: "";
+   width: 30px;
+   height: 1px;
+   background: yellow;
+   position: absolute;
+   display: block;
+   left: 0;
+   top: 50%;
+}
+
+.mata img {
+   padding-top: 100px;
+   height: 50%;
+   width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+   #hero { /* Mengubah hero menjadi #hero */
+      display: grid;
+   }
+
+   .hero-left {
+      margin-left: 30px;
+      margin-top: 10rem;
+   }
+
+   .hero-right {
+      justify-content: center; /* Menambahkan justify-content: center; agar konten berada di tengah */
+      gap: 2rem; /* Menambahkan gap agar ada ruang di antara gambar */
+   }
+
+   .mata img {
+      padding-top: 100px;
+      height: auto; /* Mengubah height dari 120% menjadi auto */
+      width: 100%; /* Mengubah width dari 120% menjadi 100% */
+      right: 0;
+   }   
+}
+/* end of hero */
+
+/* project */
+#project {
+   background: #70aabc;
+   display: flex;
+   padding-top: 250px;
+   padding-left: 160px;
+   padding-bottom: 150px;
+   gap: 4rem;
+   padding-right: 2rem;
+}
+
+.project-img-left img {
+   height: 630px;
+   width: 500px;
+}
+
+.project-right {
+   align-self: center; /* Tengahkan teks saat layar normal */
+}
+
+@media only screen and (max-width: 900px) {
+   #project {
+       display: grid;
+       padding: 150px;
+       padding-left: 30px;
+       padding-right: 30px; /* Tambahkan padding-right agar gambar tidak terpotong */
+   }
+
+   .project-img-left img {
+      width: 100%; /* Ubah ukuran gambar menjadi 100% untuk responsif */
+      height: auto; /* Ubah tinggi gambar menjadi auto untuk responsif */
+   }
+
+   .project-right {
+      text-align: center; /* Tengahkan teks saat layar diperkecil */
+   }
+
+   button {
+      padding-top: 1rem;
+   }
+}
+
+/* end of project */
+
+
+.hero-name1 {
+   color: yellow;
+   font-size: 3rem;
+   font-family: 700;
+   margin: 0.5rem 0 1rem;
+}
+
+button {
+   padding: 10px 20px;
+   border: none;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 8px;
+   background:#cea5ad;
+}
+
+.button1 {
+   padding: 10px 20px;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+
+.button2 {
+   background-color:#70aabc;
+}
+ 
+
+.footer-title {
+   background-color: black;
+   width: 100%;
+   padding-top: 320px;
+   padding-bottom: 350px;
+   color: yellow;
+   font-size: 40px;
+   font-weight: bold;
+   padding-left: 160px;
+}
+
+@media only screen and (max-width: 900px) {
+   .footer-title {
+      padding-top: 150px; /* Menurunkan padding-top agar tidak terlalu besar pada layar kecil */
+      padding-bottom: 150px; /* Menurunkan padding-bottom agar tidak terlalu besar pada layar kecil */
+      padding-left: 30px; /* Mengubah padding-left dari 160px menjadi 30px */
+   }
+}
+
+/* section assignment */
+#assignment {
+   background-color: yellow;
+}
+
+.judul-assignment {
+   padding-top: 100px;
+}
+
+.xaxiixu-1 {
+ font-size: 20px;
+}
+
+.xaxiixu-2 {
+   font-size: 40px;
+}
+
+/* assignment-container-first */
+.assignment-container-first {
+   display: flex;
+   justify-content: space-between; /* Menyeimbangkan ruang di antara gambar */
+   align-items: center; /* Memastikan gambar sejajar vertikal */
+   margin-top: 100px;
+}
+
+.assignment-card {
+   width: 75%; /* Mengatur lebar kartu tugas */
+   margin-left: auto; /* Margin kiri menjadi otomatis */
+   margin-right: auto; /* Margin kanan menjadi otomatis */
+   text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.assignment-img {
+   width: 100%; /* Mengatur lebar gambar agar sesuai dengan parent */
+   height: auto; /* Mengatur tinggi gambar agar mengikuti proporsi aslinya */
+   filter: grayscale();
+   transition: filter .5s, transform .5s;
+}
+
+.work_title, .work_subtitle {
+   text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.assignment-link:hover .assignment-img {
+   transform: scale(1.1);
+   filter: none;
+}
+
+#assignment .assignment-text {
+   padding: 18px;
+}
+/* end of assignment-container-first */
+
+/* assignment-container-2 */
+.assignment-container-2 {
+   margin-top: 100px;
+   padding-bottom: 100px;
+   display: flex;
+   justify-content: space-between; /* Menyeimbangkan ruang di antara gambar */
+   align-items: center; /* Memastikan gambar sejajar vertikal */
+}
+
+.assignment-card {
+   width: 75%; /* Mengatur lebar kartu tugas */
+   margin-left: auto; /* Margin kiri menjadi otomatis */
+   margin-right: auto; /* Margin kanan menjadi otomatis */
+   text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.assignment-img {
+   width: 100%; /* Mengatur lebar gambar agar sesuai dengan parent */
+   height: auto; /* Mengatur tinggi gambar agar mengikuti proporsi aslinya */
+}
+
+.work_title, .work_subtitle {
+   text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+@media only screen and (max-width: 900px) {
+   #assignment .assignment-container-first {
+      display: grid;
+   }
+   #assignment .assignment-container-2 {
+      display: grid;
+   }
+   #assignment .judul-assignment {
+      padding-top: 35px;
+   }
+}
+/* end of assignment-container-2 */
+/* end of section assignment */
+
+/* page assignment 1 */
+#tugas-1 {
+   background-color: black;
+   padding: 150px 30px; /* Mengubah padding agar kiri dan kanan sama */
+}
+
+.assignment-1-img img {
+   width: 50%; /* Mengatur lebar gambar menjadi 50% pada ukuran layar normal */
+   height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+   padding-bottom: 2rem;
+}
+
+.title {
+   padding-top: 3rem;
+   padding-bottom: 5rem;
+   font-weight: bold;
+   font-size: 30px;
+   color: yellow;
+   text-align: center; /* Menengahkan teks secara horizontal */
+}
+
+.assignment-1-br-penjelasan {
+   padding-bottom: 5rem;
+   color: yellow;
+   font-size: 20px;
+   text-align: center; /* Menengahkan teks secara horizontal */
+   margin: auto; /* Menengahkan secara horizontal dan vertikal */
+}
+
+@media only screen and (max-width: 900px) {
+   #tugas-1 {
+      width: 100%;
+      height: auto;
+      padding: 100px 15px; /* Mengurangi padding saat layar kecil */
+   }
+   .assignment-1-img img {
+      width: 100%; /* Menyesuaikan lebar gambar dengan lebar kontainer saat layar kecil */
+   }
+}
+
+/* end of page assignment 1 end */
+
+/* page assignment 2 */
+#tugas-2 {
+   background-color: black;
+   padding: 150px 30px; /* Mengubah padding agar kiri dan kanan sama */
+}
+
+.assignment-2-img img{
+   width: 50%; /* Mengatur lebar gambar menjadi 50% pada ukuran layar normal */
+   max-width: 100%; /* Maksimumkan lebar gambar agar sesuai dengan lebar kontainer */
+   height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+   padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+   #tugas-2 {
+      width: 100%;
+      height: auto;
+      padding: 100px 15px; /* Mengurangi padding saat layar kecil */
+   }
+   .assignment-2-img img {
+      width: 100%; /* Menyesuaikan lebar gambar dengan lebar kontainer saat layar kecil */
+   }
+}
+
+/* end of page assignment 2 end */
+
+/* page assignment 3 */
+.assignment-3-img img{
+   width: 50%; /* Mengatur lebar gambar menjadi 50% pada ukuran layar normal */
+   height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+   padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+   .assignment-3-img img {
+      width: 100%; /* Menyesuaikan lebar gambar dengan lebar kontainer saat layar kecil */
+   }
+}
+
+/* end of page assignment 3 end */
+
+.A1{
+   padding: 5%; /* Mengubah padding agar lebih responsif */
+}
+
+.gambar-anode img {
+   max-width: 100%; /* Maksimumkan lebar gambar agar sesuai dengan lebar kontainer */
+   height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+   padding-top: 2rem; /* Menambahkan ruang atas */
+}
+
+.gambar-katoda img {
+   max-width: 100%; /* Maksimumkan lebar gambar agar sesuai dengan lebar kontainer */
+   height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+   padding-top: 2rem; /* Menambahkan ruang atas */
+}
+

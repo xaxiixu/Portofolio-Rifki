@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <section id="Home">
+        <div class="logo">Hi Its Me</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script> 
+
+<center>
+    <section id="tugas-1">
+         <div class="title">
+             <h1>Alat Praga Karakteristik Arduino</h1>                    
+         </div>
+
+         <div class="assignment-3-img">
+             <img src="assignment(3).jpg">
+         </div>
+         
+         <div class="assignment-1-br-penjelasan">
+             <br>Dalam tugas kali ini kita di suruh untuk merangkai sebuah alat praga.
+             <br>Alat praga yang saya buat di aplikasi proteus 8 sebagai tempat untuk merangkai.
+             <br>Kita tinggal mengikuti petunjuk yang sudah ada pada modul yang di berikan dari rumusan masalah,
+             <br>Tujuan, Alat-Alat penelitian yang di butuhkan, bahan penelitian, rangkaian. semuanya sudah ada di modul.
+         </div>
+    </section>
+  </center>
+    
+</body>
+</html>

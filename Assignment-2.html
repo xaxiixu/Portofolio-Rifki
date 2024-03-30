@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <section id="Home">
+        <div class="logo">Hi Its Me</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script> 
+
+<center>
+    <section id="tugas-2">
+         <div class="title">
+             <h1>Identifikasi Nilai Resistif</h1>                    
+         </div>
+
+         <div class="assignment-2-img">
+             <img src="assignment1(1).jpg">
+         </div>
+         
+         <div class="assignment-1-br-penjelasan">
+             <br>Melakukan identifikasi nilai resistif pada resistor sesuai dengan kode warna yang diberikan. Kode warna resistor adalah pita berwarna 
+             <br>yang mengidentifikasikan nilai resistif (resistansi) dan persentase toleransinya dengan ukuran fisik resistor yang menunjukkan 
+             <br>peringkat wattnya. Warna pada pita warna atau gelang resistor menunjukkan nilai yang berbeda. Gambar diatas adalah hasil  
+             <br> identifikasi saya dari soal yang diberikan, yaitu: 1. kuning biru hitam emas, 2. abu-abu putih merah perak, 3. coklat coklat hijau
+             <br>clear, 4. coklat orange merah merah, 5. ungu hijau orange emas, 6. kuning coklat hitam coklat coklat.
+         </div>
+    </section>
+  </center>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <section id="Home">
+        <div class="logo">Hi Its Me</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script> 
+
+    <section id="tugas-1">
+        
+<center>
+         <div class="title">
+             <h1>Simulasi Dioda</h1>                    
+         </div>
+</center>
+         <div class="assignment-1-br-penjelasan">
+            <h3>Apa Itu Dioda?</h3>
+            <br>Dioda merupakan komponen semikonduktor yang paling sederhana. Kata dioda berasal dari pendekatan kata yaitu dua
+            <br>elektroda yang mana (di berarti dua) mempunyai dua buah elektroda yaitu anoda dan katoda. Dioda termasuk kedalam
+            <br>ketegori komponen elektronika aktif. Dioda terbentuk dari bahan semikonduktor tipe P dan N yang digabungkan. Dengan
+            <br>demikian diode sering disebut PN junction. Dioda memiliki sifat dapat menghantarkan arus pada tegangan maju, serta
+            <br>menghambat arus pada tegangan balik (penyearah). Dioda memiliki dua kaki, yakni kaki anoda dan kaki katoda.
+            <br>
+            <br>Disini kami diminta oleh Dosen Elektronika kami untuk mencoba bereksperimen dengan Multisim di device kami. Saya
+            <br>mencoba untuk membuat rangkaian penyearah sesuai dengan PDF Minggu ke 3. Komponen yang digunakan di Multisim
+            <br>untuk eksperimen kali ini adalah AC Voltage, Resistor, Dioda dan Ground.
+            <br>
+            <br>
+            <br>
+            <h1>Simulasi</h1>
+            <br>1. anoda
+
+            <div class="gambar-anode">
+            <img src="tugas4a.jpeg">
+            <img src="tugas4b.jpeg">
+            </div>
+            
+            <br>1. katoda
+            <div class="gambar-katoda">
+            <img src="tugas4c.jpeg" alt="">
+            <img src="tugas4d.jpeg" alt="">
+            </div>
+            <br>
+            <br>
+            <center><br>Di katoda, titik minimumnya adalah -993.8585m dan titik maksimumnya adalah 999.6021m</center>
+         </div>
+    </section>
+
+    
+</body>
+</html>

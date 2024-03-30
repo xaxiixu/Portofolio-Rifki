@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <section id="Home">
+        <div class="logo">Hi Its Me</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script> 
+
+<center>
+    <section id="tugas-1">
+         <div class="title">
+             <h1>Membuat Tampilan UI/UX Website</h1>                    
+         </div>
+
+         <div class="assignment-1-img">
+             <img src="assignment1(2).jpg">
+         </div>
+         
+         <div class="assignment-1-br-penjelasan">
+             <br>Pada tugas ini kita harus membuat sebuah gambaran kasar atau perancangan mengenai website yang akan dibuat untuk 
+             <br>pengumpulan tugas. Ada 2 gambaran kasar yang dibuat, yaitu pada halaman landing page dan juga halaman pengumpulan tugas. 
+             <br>UI/UX sendiri merupakan singkatan dari User Interface (UI) dan User Experience (UX), yang merujuk pada dua aspek penting dalam desain produk, 
+             <br>terutama dalam konteks perangkat lunak (software) dan aplikasi.
+         </div>
+    </section>
+  </center>
+    
+</body>
+</html>
